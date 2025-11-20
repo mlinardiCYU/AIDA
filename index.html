@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AIDA - Actionable XAI for Deep learning Algorithms</title>
+  <meta name="description" content="AIDA - ANR (French Research National Agency) Research project applying novel machine learning techniques to groundwater level prediction in France." />
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">AIDA</div>
+        <div>
+          <h1>AIDA - Actionable XAI for Deep learning Algorithms</h1>
+          <div class="tag">Machine Learning and Actionable Explainability applied to groundwater level prediction.</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#packages">Working Packages</a>
+        <a href="#perspective">Research Perspective</a>
+        <a href="#team">Team</a>
+        <a class="cta" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h2>Here we can put a roadmap or conceptual map resuming project objectives</h2>
+          <p class="lead">Integrating national observation networks, remote sensing, and hydrogeological knowledge to build robust, explainable models for short- and long-term groundwater level forecasting.</p>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="tag">Study area</div>
+              <strong>France (metropolitan)</strong>
+            </div>
+            <div class="stat">
+              <div class="tag">Time horizon</div>
+              <strong>Daily → Monthly predictions</strong>
+            </div>
+            <div class="stat">
+              <div class="tag">Core tech</div>
+              <strong>ML / Time series / Geo</strong>
+            </div>
+          </div>
+        </div>
+  
+      </section>
+
+      <section id="about" class="card">
+        <h2>About the project</h2>
+        <p class="muted">This research project develops and evaluates machine learning methods to forecast groundwater levels across France using in-situ observations, meteorological forcing, remote sensing indices, and geological constraints. The research emphasizes reproducibility, uncertainty quantification, and transferability between catchments.</p>
+      </section>
+
+      <section id="packages">
+        <div class="wp-title"><h2>Working packages</h2><div class="tag">Three coordinated packages</div></div>
+        <div class="grid" style="margin-top:12px">
+          <article class="wp card">
+            <h3>WP1 — Data Collection & Processing</h3>
+            <p class="muted">Assemble observational and exogenous datasets, perform quality control, and create standardized feature sets.</p>
+            <ul>
+              <li><strong>Objectives:</strong> collect national piezometric series, meteorological forcings (Météo-France), river flows, satellite indices (GRACE, Sentinel), and lithology maps.</li>
+              <li><strong>Deliverables:</strong> cleaned time series, metadata catalogue, reproducible ETL pipelines.</li>
+              <li><strong>Lead:</strong> C. Martin</li>
+            </ul>
+          </article>
+
+          <article class="wp card">
+            <h3>WP2 — Modeling & Machine Learning</h3>
+            <p class="muted">Develop candidate models, from classical time-series (ARIMAX) to modern methods (LSTMs, Temporal Convolutional Networks, Gaussian Processes, Physics-Informed ML).</p>
+            <ul>
+              <li><strong>Objectives:</strong> benchmark models, uncertainty estimates, feature importance, and generalization tests across regions.</li>
+              <li><strong>Deliverables:</strong> model library, evaluation suite, reproducible notebooks.</li>
+              <li><strong>Lead:</strong> L. Moreau</li>
+            </ul>
+          </article>
+
+          <article class="wp card">
+            <h3>WP3 — Deployment & Monitoring</h3>
+            <p class="muted">Productize top models, deploy APIs and dashboards, and design an operational monitoring pipeline with automated retraining triggers.</p>
+            <ul>
+              <li><strong>Objectives:</strong> dockerized services, CI/CD, model monitoring, stakeholder-ready visualizations.</li>
+              <li><strong>Deliverables:</strong> REST API, web dashboard (interactive forecasts), deployment manual.</li>
+              <li><strong>Lead:</strong> S. Lefèvre</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="perspective" class="two-col" style="margin-top:18px">
+        <div class="card">
+          <h2>Data & Methods</h2>
+          <p class="muted">Main Research Question and Perspective:</p>
+          <div class="timeline">
+            <div class="step"><div class="dot"></div><div><strong>Observations:</strong> TDB </div></div>
+                  </div>
+        </div>
+        <aside class="card">
+          <h3>Useful links</h3>
+          <ul class="muted">
+            <li>Data licence & access: <em>open when permitted</em></li>
+            <li>Versioning: Git + DVC for large time-series</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="team" class="card">
+        <h2>Team & Contacts</h2>
+        <p class="muted">Core team members and institutional partners.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+          <div style="flex:1 1 220px;padding:12px;border-radius:10px;background:var(--card);box-shadow:0 8px 20px rgba(16,24,40,0.04)">
+            <strong>Nicolas Labroche</strong>
+            <div class="muted">Project coordinator</div>
+            <div class="tag" style="margin-top:8px">University of Tours</div>
+          </div>
+        </div>
+      </section>
+
+     <section id="contact" class="card">
+        <h2>Contact & Next steps</h2>
+        <p class="muted">Interested collaborators or data owners can contact the Principal Investigator</p>
+        <p style="margin-top:12px"><strong>Email:</strong> <a href="nicolas.labroche@univ-tours.fr">nicolas.labroche@univ-tours.fr</a></p>
+	 </section>
+
+    </main>
+
+    <footer>
+      <div>© 2025 ML Groundwater — France</div>
+      <div class="muted">Designed for research & reproducibility</div>
+    </footer>
+  </div>
+</body>
+</html>
