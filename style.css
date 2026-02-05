@@ -84,3 +84,5 @@
 
     /* responsive helpers */
     @media (max-width:560px){body{padding:18px} .logo{width:44px;height:44px} .hero h2{font-size:18px}}
+	
+	.img_logo{width: auto;height: 5em;}
